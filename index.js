@@ -7,7 +7,7 @@ const config = require('./config.js');
 // and their names should always begin with g
 global.gConfig = config;
 
-const fileName = 'mm.png';
+const fileName = 'out/mm.png';
 let d = new Date();
 
 async function go() {
