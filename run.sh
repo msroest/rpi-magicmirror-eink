@@ -9,5 +9,7 @@ LOAD_DELAY=10
 if [ -f $(dirname "$0")/config.sh ]; then
    source $(dirname "$0")/config.sh
 fi
+pushd $(dirname "$0")
 npm start
 $(dirname "$0")/.venv/bin/python3 $(dirname "$0")/imagewrite.py $DISPLAY_MODEL $(dirname "$0")/out/mm.png
+popd
