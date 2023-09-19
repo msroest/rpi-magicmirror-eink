@@ -19,7 +19,7 @@ const browser = await puppeteer.launch({
 
 // create a new virtual window/page in puppeteer
 const page = await browser.newPage();
-
+await page.emulateTimezone(process.env.TZ || 'UTC');
 // set the virtual browser width and size
 // should be the same as the eink display
 await page.setViewport({
