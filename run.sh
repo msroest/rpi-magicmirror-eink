@@ -6,8 +6,8 @@ DISPLAY_HEIGHT=480
 DISPLAY_MODEL=epd7in5_V2
 LOAD_DELAY=10
 
-if [ -f ./config.sh ]; then
-   source ./config.sh
+if [ -f $(dirname "$0")/config.sh ]; then
+   source $(dirname "$0")config.sh
 fi
 docker pull msroest/rpi-magicmirror-eink:latest
 docker run -it --rm -e MAGICMIRROR_HOST=$MAGICMIRROR_HOST -e MAGICMIRROR_PORT=$MAGICMIRROR_PORT -e DISPLAY_WIDTH=$DISPLAY_WIDTH -e DISPLAY_HEIGHT=$DISPLAY_HEIGHT -e LOAD_DELAY=$LOAD_DELAY -v ./out:/opt/app/out msroest/rpi-magicmirror-eink:latest
