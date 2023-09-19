@@ -27,6 +27,7 @@ await page.setViewport({
   height: global.gConfig.display_height
 });
 
+
 // open the MagicMirror site with puppeteer
 await page.goto(`http://${global.gConfig.magicmirror_host}:${global.gConfig.magicmirror_port}`);
 
