@@ -11,4 +11,4 @@ if [ -f ./config.sh ]; then
 fi
 docker pull msroest/rpi-magicmirror-eink:latest
 docker run -it --rm -e MAGICMIRROR_HOST=$MAGICMIRROR_HOST -e MAGICMIRROR_PORT=$MAGICMIRROR_PORT -e DISPLAY_WIDTH=$DISPLAY_WIDTH -e DISPLAY_HEIGHT=$DISPLAY_HEIGHT -e LOAD_DELAY=$LOAD_DELAY -v ./out:/opt/app/out msroest/rpi-magicmirror-eink:latest
-$(dirname "$0")/imagewrite.sh $DISPLAY_MODEL out/mm.png
+$(dirname "$0")/imagewrite.py $DISPLAY_MODEL out/mm.png
