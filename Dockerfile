@@ -3,7 +3,7 @@ COPY . /opt/app
 RUN mkdir -p /opt/app/out \
 && apt-get update \
 && apt-get dist-upgrade -y \
-&& apt-get install -y chromium \
+&& apt-get install -y chromium tzdata \
 && cd /opt/app \
 && npm ci \
 && apt-get clean\
