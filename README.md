@@ -5,12 +5,8 @@
   </a>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="prs welcome">
 </p>
-<p align="center">
-<img style="max-height:300px" src="cover.jpg">
-</p>
-
 ## How it works
-This is a fork of [rpi-magicmirror-epaper](https://github.com/BenRoe/rpi-magicmirror-eink) from [BenRoe](https://github.com/BenRoe)
+This is a fork of [rpi-magicmirror-eink](https://github.com/BenRoe/rpi-magicmirror-eink) from [BenRoe](https://github.com/BenRoe)
 Update to build and publish a docker container to minimize drift in chromium.  And simplify the setup by just using linux cron to actually run the script
 
 
